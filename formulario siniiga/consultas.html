@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>  
+  <title>Cédula de identificación Especie Bovina, Ovina y Caprina</title><!--titulo que aparece en la pestaña del navegador-->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "shortcut icon" href="img/172-magnet.png"><!--favicon -->
+    <!--<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.css'>-->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!--estilos de bootstrap para hacer la plicación responsiva -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css"><!-- referencia hacia la hoja de estilos-->
+
+  
+</head>
+
+<body>
+    
+    <nav class="main-nav"><a href="index.html">Inicio/Altas</a>    <a href="bajas-cambios.html">Bajas/Cambios</a>      <a href="consultas.html">Consultas</a></nav> <!--menú de navegación del sitio web-->
+            
+    <div class="container"> <!-- etiqueta que contiene a todos los elementos de la pagina web-->
+        <div class="page-header">  <!--etiqueta que contiene el encabezado del contenido -->            
+            <h3 align=right><img src="http://ugrcatazaja.com/logo%20SINIIGA.gif"><b>Sistema Nacional de Identificación Individual del Ganado</b></h3> <!-- titulo del contenido-->           
+        </div>
+        
+        <div class="consultas">
+        <form action="includes/consultar.php" method="post" class="form-horizontal">
+            <h3>Consultas</h3>
+             <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                 <label class="control-label col-sm-3" for="buscar">Buscar:</label>
+                 <div class="col-sm-7"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                     <input type="text" maxlength="17" class="form-control" name="caja_busqueda" id="caja_busqueda" placeholder="Ingrese parámetros de búsqueda" required="Campo Obligatorio">
+                     <!--<input type="submit" class="btn btn-info" value="Consultar" name="botonCon">-->
+                 </div> 
+            </div>
+            <div class="table-responsive" id="datos">
+                     
+            </div>
+        </form>
+        </div>
+        
+        
+             
+        
+    </div>   
+      
+    <script  src="js/main.js"></script>
+    
+</body>
+</html>

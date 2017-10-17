@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html >
+<head>  
+  <title>Cédula de identificación Especie Bovina, Ovina y Caprina</title><!--titulo que aparece en la pestaña del navegador-->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel= "shortcut icon" href="img/172-magnet.png"><!--favicon -->
+    <!--<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.0/css/bootstrap.css'>-->
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!--estilos de bootstrap para hacer la plicación responsiva -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css"><!-- referencia hacia la hoja de estilos-->
+
+  
+</head>
+
+<body><!--cuerpo de la pagina -->
+    <!--<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="index.html">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav>-->
+    
+    <nav class="main-nav"><a href="index.html">Inicio/Altas</a>    <a href="bajas-cambios.html">Bajas/Cambios</a>     <a href="consultas.html">Consultas</a></nav> <!--menú de navegación del sitio web-->
+            
+    <div class="container"> <!-- etiqueta que contiene a todos los elementos de la pagina web-->
+        <div class="page-header">  <!--etiqueta que contiene el encabezado del contenido -->            
+            <h3 align=right><img src="http://ugrcatazaja.com/logo%20SINIIGA.gif"><b>Sistema Nacional de Identificación Individual del Ganado</b></h3> <!-- titulo del contenido-->           
+        </div> 
+        
+        <form action="includes/registrar.php" method="post" class="form-horizontal"> <!--inicio del formulario de manera horizontal, label al lado de los inputs -->
+            <div class="propietario"> <!--etiqueta que agrupa a todos los componentes que conforman los datos del propietario y el predio--> 
+                
+                <h4>Cédula de identificación Especie Bovina, Ovina y Caprina</h4> <!--titulo del formulario -->
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="clave">Clave de UPP:</label> <!-- etiqueta label-->
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="text" maxlength="15" class="form-control" name="claveupp" placeholder="Ingrese clave">
+                    </div>
+                </div>
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="Nprod">Nombre del Productor:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="text" class="form-control" name="nombreproductor" name="nombreproductor" placeholder="Ingrese Nombre">
+                    </div>
+                </div>   
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="Npred">Nombre del Predio:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="text" class="form-control" name="nombrepredio" placeholder="Ingrese Nombre del predio">
+                    </div>
+                </div>  
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="Ntec">Nombre de Técnico Identificador:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="text" class="form-control" name="nombretecnico" placeholder="Ingrese Nombre del Técnico">
+                    </div>
+                </div> 
+                                          
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="seriedel">Serie DEL:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="text" class="form-control" name="seriedel" placeholder="Ingrese serie">
+                    </div>
+                </div> 
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="al">AL:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="text" class="form-control" name="al" placeholder="Ingrese AL">
+                    </div>
+                </div>  
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="totpaq">Total Paq. Completos:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="number" class="form-control" name="totalpaq" placeholder="Ingrese Números de paquetes">
+                    </div>
+                </div>
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="fechaarete">Fecha Aretado:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="date" class="form-control" name="fechaaretado" placeholder="Ingrese fecha">
+                    </div>
+                </div>                               
+            </div>                    
+            
+            <div class="ganado"> <!-- Etiqueta que muestra los campos obligatorios para datos del ganado-->
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="numerosiniiga">Número de Siniiga:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="text" maxlength="17" class="form-control" name="numerosiniiga" placeholder="Ingrese Número de Siniiga" required="Campo Obligatorio">
+                    </div>
+                </div>
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="aretecampaña">Arete Campaña:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="text" class="form-control" name="aretecamp" placeholder="Ingrese dato de Arete Campaña" required="Campo Obligatorio">
+                    </div>
+                </div>
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="fechanac">Fecha de Nacimiento:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="date" class="form-control" name="fechanac" placeholder="Ingrese fecha" required="Campo Obligatorio">
+                    </div>
+                </div>
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="sexo">Sexo:</label>
+                    <div class="radio" class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap y declara que los inputs a usar son de tipo radio-->
+                        <label><input type="radio" name="sexo" id="macho" value="macho" required="Campo Obligatorio">Macho</label> 
+                        <label><input type="radio" name="sexo" id="hembra" value="hembra" required="Campo Obligatorio">Hembra</label>    
+                    </div>
+                </div>
+                   
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="raza">Raza:</label>
+                    <div class="radio" class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap y declara que los inputs a usar son de tipo radio-->
+                        <label><input type="radio" name="raza" id="pura" value="pura" required="Campo Obligatorio">Pura</label> 
+                        <label><input type="radio" name="raza" id="cruza" value="cruza" required="Campo Obligatorio">Cruza</label>
+                        <label><input type="radio" name="raza" id="criollo" value="criollo" required="Campo Obligatorio">Criollo</label>
+                    </div>
+                </div>
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="especificarraza">Especificar Raza/Cruza:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <input type="text" class="form-control" name="especifraza" placeholder="Especifique raza/cruce" required="Campo Obligatorio">
+                    </div>
+                </div>
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="empadre">Empadre:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <select class="form-control" name="empadre"> <!--muestra una lista de seleccion desplegable-->
+                            <option selected disabled>Selecione una Opción</option> <!--es la primera opcion que se muestra y no puede ser seleccionada-->
+                            <option>(1) Monta Natural</option>
+                            <option>(2) Inseminación Artificial</option>
+                            <option>(3) Transferencia Embrionaria</option>
+                        </select>
+                    </div>                    
+                </div>
+                
+                <div class="form-group"> <!-- etiqueta que agrupa a los label con sus respectivos inputs-->
+                    <label class="control-label col-sm-3" for="razanumerosiniga">Raza o Número de Siniiga:</label>
+                    <div class="col-sm-8"> <!-- en esta etiqueta se usará 8 columnas de las 12 que ofrece bootstrap-->
+                        <label class="control-label col-sm-3" for="padre">Padre:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="padre" placeholder="Ingrese raza o número de siniiga del padre"><br>
+                        </div>
+                        <label class="control-label col-sm-3" for="madre">Madre:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="madre" placeholder="Ingrese raza o número de siniiga de la madre">
+                        </div>
+                    </div>
+                </div>   
+                
+            </div>
+            
+            <div class="boton" class="col-sm-11"> <!--crea el boton del formulario-->
+                <input type="submit" class="btn btn-info" value="Guardar" name="boton">
+            </div>
+        </form>            
+        
+    </div>   
+      
+    <script  src="js/index.js"></script>
+    
+</body>
+</html>
